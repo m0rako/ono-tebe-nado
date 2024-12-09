@@ -182,9 +182,9 @@ body {
 }
 
 .card__title {
+  z-index: 1;
  
   margin-top: 51px;
-  z-index: 1;
   margin-left: 40px;
   font-weight: 700;
   font-size: 22px;
@@ -196,44 +196,44 @@ body {
 .card__text {
   z-index: 1;
   margin-right: 40px;
-  text-decoration: none;
   margin-bottom: 48px;
   margin-left: 40px;
   margin-left: 40px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
+  text-decoration: none;
   
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
   
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
   
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
   
 }
 
 .lots__look-more-link {
+  margin-left: 40px;
   font-weight: 400;
   font-size: 20px;
-  margin-left: 40px;
 }
 
 /* about */
@@ -241,19 +241,19 @@ body {
 .about {
   display: grid;
   grid-template-columns: 240px 639px;
-  margin: 181px 24px 0 71px;
   gap: 72px;
+  margin: 181px 24px 0 71px;
 
 }
 
 .about__logo {
-  background-color: #000;
-  border-radius: 50%;
-  width: 240px;
-  height: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
 }
 
 .about__column {
@@ -262,10 +262,10 @@ body {
   margin-top: 100px;
 }
 .about__title {
+  margin-bottom: 100px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 100px;
 }
 
 .about__text {
@@ -279,26 +279,26 @@ body {
 }
 
 /* footer */
+
 .footer {
-  margin: 180px 50px 88px;
   display: flex;
   justify-content: space-between;
+  margin: 180px 50px 88px;
   
 }
 
 .footer__menu-list {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
   text-align: center;
+  list-style-type: none;
 }
-
 
 .footer__social-list {
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
   gap: 48px;
+  list-style-type: none;
 }
 
 .footer__social-icon {
