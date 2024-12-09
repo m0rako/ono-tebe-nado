@@ -27,7 +27,8 @@ body {
 
 .header__links-list-item {
   list-style: circle;  
-}
+
+}  
 
 .header__links-list-item_no-bullet {
   list-style: none;
@@ -52,7 +53,7 @@ body {
   
 }
 
-.address a{
+.address a {
   border-bottom: 1px solid #000;
   text-decoration: none;
 }
@@ -119,6 +120,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-right: 50px;
+  
   margin-left: 78px; 
   color: #fff;
   white-space: nowrap;
