@@ -51,6 +51,7 @@ body {
   font-style: normal;
   
 }
+
 .address a{
   border-bottom: 1px solid #000;
   text-decoration: none;
@@ -198,12 +199,10 @@ body {
   margin-right: 40px;
   margin-bottom: 48px;
   margin-left: 40px;
-  margin-left: 40px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   text-decoration: none;
-  
 }
 
 .card_type_film {
