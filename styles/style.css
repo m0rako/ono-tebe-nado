@@ -57,34 +57,34 @@ body {
 /* COVER */
 
 .cover {
-  display: grid;
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 757px;
   position: relative;
+  display: grid;
+  height: 757px;
   color: #fff;
   text-transform: uppercase;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
   position: relative;
   z-index: 3;
   width: 100%;
+  margin: 170px 50px 237px;
   font-weight: 700;
   font-size: 100px;
   line-height: 1;
   letter-spacing: 0.3em;
-  margin: 170px 50px 237px;
 }
 
 .aligned-text {
@@ -108,15 +108,15 @@ body {
 }
 
 .cover__description {
+  position: relative;
+  bottom: 105px;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  bottom: 105px;
   margin-right: 50px;
-  margin-left: 78px;
-  position: relative;
-  z-index: 2; 
+  margin-left: 78px; 
   color: #fff;
   white-space: nowrap;
 }
@@ -129,13 +129,13 @@ body {
 
 }
 .bet-button {
+  margin-left: 78px;
+  border: 1px solid #fff;
+  padding: 12px 32px;
   font-weight: 500;
   font-size: 22px;
   text-align: center;
-  margin-left: 78px;
-  padding: 12px 32px;
   text-decoration: none;
-  border: 1px solid #fff;
 }
 
 /* LOTS */
@@ -144,62 +144,64 @@ body {
 }
 
 .lots__heading {
+  margin-bottom: 27px;
+  margin-left: 40px;
+  color: #000;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  color: #000;
-  margin-left: 40px;
-  margin-bottom: 27px;
 
 }
 
 .lots__card-list {
-  list-style: none;
   display: flex;
   flex-direction: row;
   gap: 25px;
-  margin-bottom: 30px;;
+  margin-bottom: 30px;
+  list-style: none;;
 }
 
 
 .card-link {
-  color: #fff;
-  width: 334px;
-  height: 563px;
   position: relative;
   display: flex;
+  width: 334px;
+  height: 563px;
+  color: #fff;
   text-decoration: none;
 }
 
 .card {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .card__title {
+ 
   margin-top: 51px;
   z-index: 1;
-  text-transform: uppercase;
-  text-decoration: underline;
   margin-left: 40px;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .card__text {
   z-index: 1;
+  margin-right: 40px;
+  text-decoration: none;
+  margin-bottom: 48px;
+  margin-left: 40px;
   margin-left: 40px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  text-decoration: none;
-  margin-bottom: 48px;
-  margin-right: 40px;
-  margin-left: 40px;
+  
 }
 
 .card_type_film {
@@ -207,6 +209,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  
 }
 
 .card_type_book {
@@ -214,6 +217,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  
 }
 
 .card_type_picture {
@@ -221,10 +225,52 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  
 }
 
 .lots__look-more-link {
   font-weight: 400;
   font-size: 20px;
   margin-left: 40px;
+}
+
+/* about */
+
+.about {
+  display: grid;
+  grid-template-columns: 240px 639px;
+  margin: 181px 24px 0 71px;
+  gap: 72px;
+
+}
+
+.about__logo {
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__column {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  margin-top: 100px;
+}
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
 }
